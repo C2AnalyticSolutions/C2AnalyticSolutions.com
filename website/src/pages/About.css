@@ -1,0 +1,36 @@
+/* styles.css */
+.card {
+  position: relative;
+  overflow: hidden; /* Ensure the card doesn't overflow when scaled */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
+.card:hover .card-body {
+  color: transparent;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Dark overlay for better readability */
+  padding: 1rem;
+  transition: color 0.3s ease; /* Add transition for text color change */
+}
+
+.card-title,
+.card-text {
+  color: white;
+  margin: 0;
+}
