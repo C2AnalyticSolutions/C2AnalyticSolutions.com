@@ -1,3 +1,13 @@
+//Icons
+import { IoIosHome } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaLink } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
 function NavBar() {
   return (
     <nav className="navbar sticky-top shadow-lg navbar-expand-lg navbar-dark bg-dark">
@@ -19,26 +29,30 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                Home
+              <a className="nav-link" aria-current="page" href="#Home">
+                <IoIosHome />
+                {"    "}Home
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                About
+              <a className="nav-link" aria-current="page" href="#About">
+                <FaUser />
+                {"    "}About
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                Projects
+              <a className="nav-link" aria-current="page" href="#Projects">
+                <FaTools />
+                {"    "}Projects
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                Contact
+              <a className="nav-link" aria-current="page" href="#Contact">
+                <CiMail />
+                {"    "}Contact
               </a>
             </li>
 
@@ -50,12 +64,17 @@ function NavBar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Links
+                <FaLink />
+                {"    "}Links
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    LinkedIn
+                  <a
+                    className="dropdown-item"
+                    href="https://www.linkedin.com/in/c2-analytic-solutions-160bb9291/"
+                  >
+                    <FaLinkedin />
+                    {"    "}LinkedIn
                   </a>
                 </li>
 
@@ -64,7 +83,8 @@ function NavBar() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Resume
+                    <FaDownload />
+                    {"    "}Resume
                   </a>
                 </li>
                 <li>
@@ -72,7 +92,8 @@ function NavBar() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Email
+                    <MdEmail />
+                    {"    "}Email
                   </a>
                 </li>
               </ul>
