@@ -7,11 +7,14 @@ import Home from "./pages/Home";
 
 import imagePath from "./assets/Slide-2.jpg";
 
+import About from "./pages/About";
+
 function App() {
   return (
     <div>
       <NavBar />
       <Home imageSrcPath={imagePath} />
+      <About />
     </div>
   );
 }

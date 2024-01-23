@@ -1,9 +1,6 @@
 function NavBar() {
   return (
-    <nav
-      className="navbar sticky-top shadow-lg navbar-expand-lg bg-light"
-      data-bs-theme="light"
-    >
+    <nav className="navbar sticky-top shadow-lg navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           C2 Analytic Solutions
