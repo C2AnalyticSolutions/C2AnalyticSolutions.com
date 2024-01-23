@@ -17,6 +17,8 @@ import Projects from "./pages/Projects";
 
 import videoPath from "./assets/LifeBridgeAppPresentation.mp4";
 
+import Contact from "./pages/Contact";
+
 function App() {
   return (
     <div>
@@ -28,6 +30,7 @@ function App() {
         imageSrcPath4={imagePath4}
       />
       <Projects videoSrcPath={videoPath} />
+      <Contact />
     </div>
   );
 }

@@ -36,6 +36,12 @@ function NavBar() {
               </a>
             </li>
 
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
+                Contact
+              </a>
+            </li>
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"

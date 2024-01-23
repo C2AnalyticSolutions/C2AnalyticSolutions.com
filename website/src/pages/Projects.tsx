@@ -1,8 +1,8 @@
+// Projects.tsx
+
 interface ProjectProps {
   videoSrcPath: string;
 }
-
-// Projects.tsx
 
 function Projects({ videoSrcPath }: ProjectProps) {
   return (
@@ -29,15 +29,80 @@ function Projects({ videoSrcPath }: ProjectProps) {
             <p className="text-muted">
               Data entry workflow application using Power Apps to capture the
               hospital’s acquired conditions (HAC). This application is
-              currently used withing the Quality division for reporting purposes
+              currently used within the Quality division for reporting purposes
               of the revenue impact and mortality scores within the hospital.
             </p>
             <p className="text-muted">
               Created multiple notification flows using Power Automate which
               helped automate workflow processes for high patient risk cases in
-              the hospital which maximized productivity in decision making
-              within the Quality Improvement Division.
+              the hospital, maximizing productivity in decision-making within
+              the Quality Improvement Division.
             </p>
+          </div>
+        </div>
+
+        {/* Projects Header */}
+        <div className="row mt-5">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading text-uppercase mb-4">Projects</h2>
+          </div>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="row">
+          {/* Project 1 */}
+          <div className="col-md-4 mb-4">
+            {/* Project Card */}
+            <div className="card shadow-sm">
+              <img
+                src="https://placehold.it/300x200" // Replace with actual project image URL
+                className="card-img-top"
+                alt="Project 1"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Project 1</h5>
+                <p className="card-text">
+                  Project description goes here. You can provide more details
+                  about the project in this section.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm">
+              <img
+                src="https://placehold.it/300x200" // Replace with actual project image URL
+                className="card-img-top"
+                alt="Project 2"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Project 2</h5>
+                <p className="card-text">
+                  Project description goes here. You can provide more details
+                  about the project in this section.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm">
+              <img
+                src="https://placehold.it/300x200" // Replace with actual project image URL
+                className="card-img-top"
+                alt="Project 3"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Project 3</h5>
+                <p className="card-text">
+                  Project description goes here. You can provide more details
+                  about the project in this section.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
