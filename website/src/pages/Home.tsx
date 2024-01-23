@@ -11,13 +11,15 @@ function Home({ imageSrcPath }: HomeProps) {
   };
 
   return (
-    <div
-      className="bg-image d-flex align-items-center justify-content-center"
-      style={backgroundImageStyle}
-    >
-      {/* Landing Section */}
-      <div className="container text-center text-white">
-        <h1 className="display-4">Welcome to Our Passionate Start-up</h1>
+    <div id="Home">
+      <div
+        className="bg-image d-flex align-items-center justify-content-center"
+        style={backgroundImageStyle}
+      >
+        {/* Landing Section */}
+        <div className="container text-center text-white">
+          <h1 className="display-4">Welcome to Our Passionate Start-up</h1>
+        </div>
       </div>
     </div>
   );

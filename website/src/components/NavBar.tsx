@@ -8,7 +8,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-function NavBar() {
+interface NavProps {
+  resumeSrcPath: string;
+}
+
+function NavBar({ resumeSrcPath }: NavProps) {
   return (
     <nav className="navbar sticky-top shadow-lg navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -82,7 +86,7 @@ function NavBar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href={resumeSrcPath}>
                     <FaDownload />
                     {"    "}Resume
                   </a>
@@ -91,7 +95,11 @@ function NavBar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a
+                    className="dropdown-item"
+                    href="mailto:adminc2@c2analyticsolutions.com
+                    "
+                  >
                     <MdEmail />
                     {"    "}Email
                   </a>

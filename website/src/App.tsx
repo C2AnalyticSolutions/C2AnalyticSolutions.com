@@ -19,10 +19,12 @@ import videoPath from "./assets/LifeBridgeAppPresentation.mp4";
 
 import Contact from "./pages/Contact";
 
+import resume from "./assets/resume_test.pdf";
+
 function App() {
   return (
     <div>
-      <NavBar />
+      <NavBar resumeSrcPath={resume} />
       <Home imageSrcPath={imagePath} />
       <About
         imageSrcPath2={imagePath2}
