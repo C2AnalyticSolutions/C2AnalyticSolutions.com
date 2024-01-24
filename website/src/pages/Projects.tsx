@@ -1,5 +1,4 @@
 // Projects.tsx
-import { LuConstruction } from "react-icons/lu";
 
 interface ProjectProps {
   videoSrcPath: string;
@@ -7,8 +6,6 @@ interface ProjectProps {
   imageSrcPath6: string;
   imageSrcPath7: string;
 }
-
-// ... (your imports)
 
 function Projects({
   videoSrcPath,
