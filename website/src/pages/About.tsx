@@ -62,7 +62,7 @@ function About({ imageSrcPath2, imageSrcPath3, imageSrcPath4 }: AboutProps) {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Yessica</h5>
-                    <p className="card-text">Senior Data Analyst</p>
+                    <p className="card-text"> Lead Informatics Analyst</p>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ function About({ imageSrcPath2, imageSrcPath3, imageSrcPath4 }: AboutProps) {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Anthony</h5>
-                    <p className="card-text">Developer</p>
+                    <p className="card-text">Software Engineer</p>
                   </div>
                 </div>
               </div>

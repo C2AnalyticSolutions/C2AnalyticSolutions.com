@@ -1,6 +1,3 @@
-import logo from "../assets/C2A_LOGO.png";
-import "./Contact.css";
-
 function Contact() {
   return (
     <div id="Contact">
@@ -16,11 +13,10 @@ function Contact() {
           <div className="row">
             <div className="col-lg-12">
               <div className="d-flex flex-column align-items-center justify-content-center mb-4">
-                <img src={logo} alt="Logo" className="logo mb-3" />
+                {/* Image removed */}
                 <form
                   className="custom-form"
-                  action="mailto:adminc2@c2analyticsolutions.com
-                  "
+                  action="mailto:adminc2@c2analyticsolutions.com"
                   method="post"
                   encType="text/plain"
                 >
