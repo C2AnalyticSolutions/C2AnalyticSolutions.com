@@ -1,7 +1,5 @@
-// Contact.tsx
-
-import "./Contact.css"; // Import the custom CSS file
-import logo from "../assets/C2A_LOGO.png"; // Replace 'your-logo.png' with the path to your logo image
+import logo from "../assets/C2A_LOGO.png";
+import "./Contact.css";
 
 function Contact() {
   return (
@@ -17,33 +15,42 @@ function Contact() {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <div className="d-flex align-items-center justify-content-center mb-4">
-                <img src={logo} alt="Logo" className="logo mr-3" />
-                <form className="custom-form">
+              <div className="d-flex flex-column align-items-center justify-content-center mb-4">
+                <img src={logo} alt="Logo" className="logo mb-3" />
+                <form
+                  className="custom-form"
+                  action="mailto:adminc2@c2analyticsolutions.com
+                  "
+                  method="post"
+                  encType="text/plain"
+                >
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 mb-3">
                       <div className="form-group">
                         <input
                           type="text"
+                          name="Name"
                           className="form-control"
                           placeholder="Your Name"
                           required
                         />
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 mb-3">
                       <div className="form-group">
                         <input
                           type="email"
+                          name="Email"
                           className="form-control"
                           placeholder="Your Email"
                           required
                         />
                       </div>
                     </div>
-                    <div className="col-md-12">
+                    <div className="col-md-12 mb-3">
                       <div className="form-group">
                         <textarea
+                          name="Message"
                           className="form-control"
                           placeholder="Your Message"
                           rows={6}

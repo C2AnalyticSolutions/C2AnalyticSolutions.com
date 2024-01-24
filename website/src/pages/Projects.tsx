@@ -1,10 +1,21 @@
 // Projects.tsx
+import { LuConstruction } from "react-icons/lu";
 
 interface ProjectProps {
   videoSrcPath: string;
+  imageSrcPath5: string;
+  imageSrcPath6: string;
+  imageSrcPath7: string;
 }
 
-function Projects({ videoSrcPath }: ProjectProps) {
+// ... (your imports)
+
+function Projects({
+  videoSrcPath,
+  imageSrcPath5,
+  imageSrcPath6,
+  imageSrcPath7,
+}: ProjectProps) {
   return (
     <div id="Projects">
       <section className="bg-light py-5">
@@ -50,60 +61,54 @@ function Projects({ videoSrcPath }: ProjectProps) {
             </div>
           </div>
 
-          {/* Projects Grid */}
-          <div className="row">
-            {/* Project 1 */}
-            <div className="col-md-4 mb-4">
-              {/* Project Card */}
-              <div className="card shadow-sm">
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            {/* First Card */}
+            <div className="col mb-4">
+              <div className="card">
                 <img
-                  src="https://placehold.it/300x200" // Replace with actual project image URL
+                  src={imageSrcPath5}
                   className="card-img-top"
-                  alt="Project 1"
+                  alt="Card image cap"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Project 1</h5>
-                  <p className="card-text">
-                    Project description goes here. You can provide more details
-                    about the project in this section.
-                  </p>
-                </div>
+                <h2>Pallative Team Metrics Dashboard</h2>
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">Coming soon!</li>
+                </ul>
               </div>
             </div>
 
-            {/* Project 2 */}
-            <div className="col-md-4 mb-4">
-              <div className="card shadow-sm">
+            {/* Second Card */}
+            <div className="col mb-4">
+              <div className="card">
                 <img
-                  src="https://placehold.it/300x200" // Replace with actual project image URL
+                  src={imageSrcPath6}
                   className="card-img-top"
-                  alt="Project 2"
+                  alt="Card image cap"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Project 2</h5>
-                  <p className="card-text">
-                    Project description goes here. You can provide more details
-                    about the project in this section.
-                  </p>
-                </div>
+                <h2>C2 Analytic Solutions Website</h2>
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">AWS S3 Bucket</li>
+                  <li className="list-group-item">AWS Route 53</li>
+                  <li className="list-group-item">AWS CloudFront</li>
+                </ul>
               </div>
             </div>
 
-            {/* Project 3 */}
-            <div className="col-md-4 mb-4">
-              <div className="card shadow-sm">
+            {/* Third Card */}
+            <div className="col mb-4">
+              <div className="card">
                 <img
-                  src="https://placehold.it/300x200" // Replace with actual project image URL
+                  src={imageSrcPath7}
                   className="card-img-top"
-                  alt="Project 3"
+                  alt="Card image cap"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Project 3</h5>
-                  <p className="card-text">
-                    Project description goes here. You can provide more details
-                    about the project in this section.
-                  </p>
-                </div>
+                <h2>Palliative Services Line Metrics</h2>
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">Coming soon!</li>
+                </ul>
               </div>
             </div>
           </div>
