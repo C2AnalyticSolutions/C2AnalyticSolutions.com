@@ -21,9 +21,9 @@ import Contact from "./pages/Contact";
 
 import resume from "./assets/resume_test.pdf";
 
-import imagePath5 from "./assets/PSLM.jpeg";
+import imagePath5 from "./assets/PSLM.png";
 import imagePath6 from "./assets/C2A-Website.png";
-import imagePath7 from "./assets/Palliative Team Metrics Dashboard.jpeg";
+import imagePath7 from "./assets/Palliative Team Metrics Dashboard.png";
 
 function App() {
   return (
