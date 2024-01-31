@@ -15,8 +15,6 @@ import imagePath4 from "./assets/Tony.png";
 
 import Projects from "./pages/Projects";
 
-import videoPath from "./assets/LifeBridgeAppPresentation.mp4";
-
 import Contact from "./pages/Contact";
 
 import resume from "./assets/resume_test.pdf";
@@ -36,7 +34,6 @@ function App() {
         imageSrcPath4={imagePath4}
       />
       <Projects
-        videoSrcPath={videoPath}
         imageSrcPath5={imagePath5}
         imageSrcPath6={imagePath6}
         imageSrcPath7={imagePath7}
